@@ -1,0 +1,208 @@
+/* підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&display=swap');
+
+/* підключення через плагін */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700');
+
+
+/* локальне підключення */
+@import url("fonts.css");
+
+
+@import url("reset.css");
+
+
+/* font-family: "Big Shoulders Stencil Text", sans-serif; */
+
+/* font-family: "Quicksand", sans-serif; */
+
+/* font-family: "Great Vibes", sans-serif; */
+
+body {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	color: black;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 64px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.header__subtitle {
+	font-size: 34px;
+	font-weight: 600;
+	font-style: italic;
+	margin-bottom: 10px;
+	color: red;
+}
+
+.header__text-1 {
+	color: green;
+	text-decoration: line-through;
+	text-align: end;
+	font-weight: 600;
+}
+
+.header__text-2 {
+	font-family: "Great Vibes", sans-serif;
+	font-weight: 700;
+	font-size: 34px;
+	text-align: left;
+	text-decoration: line-through;
+	text-decoration-color: red;
+}
+
+.header__text-3 {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	text-align: justify;
+	color: rgb(30, 191, 167);
+	text-decoration: overline;
+}
+
+.header__text-4 {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: rgb(191, 132, 30);
+	text-decoration: underline;
+}
+
+.homework {
+	margin-bottom: 70px;
+}
+
+.homework__list-item-1 {
+	color: rgb(174, 50, 205);
+	font-size: 34px;
+	text-decoration: line-through;
+	text-decoration-style: dotted;
+}
+
+.homework__list-item-2 {
+	color: rgb(247, 12, 12);
+	font-size: 34px;
+	text-decoration: line-through;
+	text-decoration-style: double;
+}
+
+.homework__list-item-3 {
+	color: rgb(45, 238, 74);
+	font-size: 34px;
+	text-decoration: line-through;
+}
+
+.homework__subtitle {
+	text-align: right;
+	color: blue;
+	font-family: "Big Shoulders Stencil Text", sans-serif;
+	font-weight: 700;
+	font-size: 44px;
+	font-style: normal;
+	text-decoration: underline;
+	text-shadow: 0px 0px 25px yellow;
+	margin-bottom: 30px;
+}
+
+.homework__text-1 {
+	font-family: "Great Vibes", sans-serif;
+	font-weight: 600;
+	font-size: 34px;
+	text-shadow: -3px -3px 5px red;
+	text-transform: lowercase;
+	letter-spacing: 20px;
+}
+
+.homework__text-2 {
+	font-size: 34px;
+	color: rgb(195, 0, 255);
+	text-shadow: 3px -3px 5px green;
+	text-transform: uppercase;
+	word-spacing: 20px;
+}
+
+.homework__text-3 {
+	font-family: "Big Shoulders Stencil Text", sans-serif;
+	font-weight: 500;
+	font-size: 34px;
+	text-transform: capitalize;
+	color: rgb(39, 205, 202);
+	/* text-shadow: 	12px 12px 25px rgb(42, 237, 42); */
+	text-shadow: 3px 3px 5px #4262e2, 5px -3px 10px rgb(240, 31, 135);
+}
+
+/* --------------------------------------------- */
+
+.krovato__logo {
+	display: flex;
+	margin-bottom: 70px;
+}
+
+.krovato {
+	font-family: "Proxima Nova Reg", sans-serif;
+	color: #2B2929;
+	font-weight: 400;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2.25;
+
+}
+
+.krovato__subtitle {
+	color: #2B2929;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.krovato__img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.krovato__options-title {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+
+.krovato__text p {
+	margin-bottom: 20px;
+}
+
+.krovato__options {
+	margin-bottom: 40px;
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.krovato__options li {
+	margin-bottom: 30px;
+}
+
+footer {
+	font-family: "Proxima Nova Reg", sans-serif;
+	color: #2B2929;
+	padding: 20px 0;
+	background-color: rgb(216, 216, 216);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.9;
+}
