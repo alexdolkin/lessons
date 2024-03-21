@@ -1,0 +1,304 @@
+@import url("fonts.css");
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic');
+
+
+@import url("reset.css");
+
+
+/* font-family: "Proxima Nova", sans-serif; */
+
+body {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	font-weight: 400;
+	color: #2B2929;
+	line-height: 1.9;
+}
+
+.menu {
+	padding: 20px 0px;
+	text-align: start;
+	background-color: #000;
+	align-items: center;
+}
+
+.link {
+	display: inline-block;
+	text-align: center;
+}
+
+.link-kink {
+	width: 150px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	background-color: #000;
+	padding: 5px 10px;
+	margin-right: 40px;
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.link-kink:hover {
+	color: green;
+	border-color: green;
+}
+
+.link-4 {
+	margin-right: 0;
+}
+
+.container {
+	max-width: 1070px;
+	margin: 0 auto;
+}
+
+.lesson {
+	padding: 50px 0px 50px 0px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #333333;
+}
+
+.block {
+	background-color: rgb(154, 116, 154);
+	padding: 5%;
+	margin-bottom: 60px;
+	width: 70%;
+}
+
+.block-1 {
+	background-color: blue;
+	margin-top: 30px;
+	min-height: 100px;
+}
+
+.inline {
+	background-color: green;
+	/* padding: 50px; */
+	margin-left: 50px;
+}
+
+.inline-2 {
+	background-color: green;
+	max-width: 400px;
+	padding: 20px;
+	margin: 20px 0px 20px 0px;
+	display: block;
+}
+
+.block-2 {
+	background-color: rgb(90, 69, 102);
+	height: 100px;
+	overflow: auto;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.inline-block {
+	background-color: rgb(165, 116, 42);
+	padding: 30px;
+	margin-top: 40px;
+	max-width: 100%;
+}
+
+.inline-block-1 {
+	margin-top: 40px;
+	max-width: 20%;
+	vertical-align: middle;
+	margin-bottom: 40px;
+}
+
+/* ------------------------------------- */
+
+.items {
+	margin: 0px -5px;
+	font-size: 0;
+}
+
+.item {
+	width: 33.333%;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.item-content {
+	padding: 20px;
+	background-color: blueviolet;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* ------------------------------------- */
+
+.krovato {
+	padding: 70px 0px;
+	background-color: #F8F8F8;
+}
+
+.logo {
+	margin-bottom: 50px;
+}
+
+.subtitle {
+	margin-bottom: 40px;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.photo {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.content {
+	padding-bottom: 12px;
+}
+
+.content-text {
+	margin-bottom: 28px;
+}
+
+.headline {
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.list-item {
+	margin-bottom: 20px;
+}
+
+.list {
+	margin-bottom: 40px;
+}
+
+.list-item-text {
+	display: inline-block;
+	width: 90%;
+	padding-left: 15px;
+}
+
+.mark {
+	display: inline-block;
+}
+
+/* -------------------------------------*/
+
+.about {
+	padding: 70px 0px;
+}
+
+.about-container {
+	max-width: 1310px;
+	margin: 0 auto;
+}
+
+.about-subtitle {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.item-img {
+	margin-bottom: 20px;
+}
+
+.item-h3 {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.9;
+	margin-bottom: 20px;
+}
+
+.about-content {
+	text-align: center;
+}
+
+.about-item {
+	max-width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 30px;
+}
+
+.about-item-last {
+	margin-right: 0;
+}
+
+/* ------------------------------------- */
+
+
+.coral {
+	background-color: rgba(30, 40, 50, 0.05);
+	padding: 100px 0;
+}
+
+.coral-container {
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+.news-title {
+	color: #000;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: capitalize;
+	margin-bottom: 60px;
+}
+
+.news-content {
+	text-align: center;
+
+	font-size: 0;
+}
+
+.news-img {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.last-img {
+	margin-right: 0;
+}
+
+
+footer {
+	background-color: #000;
+	padding: 20px 0;
+}
+
+.f-container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.footer-link {
+	border-radius: 10px;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	background-color: #000;
+	padding: 5px 30px;
+	margin-right: 40px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.footer-link:hover {
+	color: green;
+	border-color: green;
+}
