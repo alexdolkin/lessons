@@ -1,0 +1,243 @@
+.hero {
+	background: $bgColor;
+	@include adaptiveValue("padding-top", 130, 25, 0, 1302, 353);
+	overflow: hidden;
+	position: relative;
+
+	// .hero__body
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		padding-top: 120px;
+	}
+
+	// .hero__left-ball
+	&__left-ball {
+		width: 480px;
+		height: 480px;
+		flex-shrink: 0;
+		border-radius: 480px;
+		opacity: 0.3;
+		background: linear-gradient(90deg, rgba(151, 0, 255, 0.60) 0%, rgba(87, 255, 28, 0.60) 36.9%, rgba(255, 0, 0, 0.60) 67.4%, rgba(0, 56, 255, 0.60) 100%);
+		filter: blur(50px);
+		position: absolute;
+		left: -150px;
+		top: -120px;
+		animation-name: left-ball;
+		animation-timing-function: linear;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		// animation: left-ball 20s linear infinite;
+		@keyframes left-ball {
+			0% {
+			  transform: translate(0, 0);
+			}
+			35% {
+			  transform: translate(200%, 100%);
+			}
+			75% {
+			  transform: translate(0%, 100%);
+			}
+			100% {
+			  transform: translate(0, 0);
+			}
+		 }
+	}
+
+	// .hero__right-ball
+	&__right-ball {
+		width: 480px;
+		height: 480px;
+		flex-shrink: 0;
+		border-radius: 480px;
+		opacity: 0.3;
+		background: linear-gradient(90deg, rgba(151, 0, 255, 0.60) 0%, rgba(87, 255, 28, 0.60) 36.9%, rgba(255, 0, 0, 0.60) 67.4%, rgba(0, 56, 255, 0.60) 100%);
+		filter: blur(50px);
+		position: absolute;
+		right: -150px;
+		bottom: -120px;
+		animation-name: right-ball;
+		animation-timing-function: linear;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		@keyframes right-ball {
+			0% {
+			  transform: translate(0, 0);
+			}
+			35% {
+			  transform: translate(-200%, -100%);
+			}
+			75% {
+			  transform: translate(0, -100%);
+			}
+			100% {
+			  transform: translate(0, 0);
+			}
+		 }
+	}
+
+	// .hero__info
+	&__info {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 584px;
+		gap: 20px;
+		flex-shrink: 1;
+		flex-grow: 1;
+	}
+
+	// .hero__name
+	&__name {
+		font-family: "Exo", sans-serif;
+		@include adaptiveValue("font-size", 18, 14, 0, 1302, 353);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.1;
+		letter-spacing: -0.36px;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+		position: relative;
+		&::after{
+			content: '';
+			@include adaptiveValue("width", 152, 109, 0, 1302, 353);
+			height: 1px;
+			background: linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%);
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+		}
+	}
+
+	// .hero__title
+	&__title {
+		font-family: "Exo", sans-serif;
+		@include adaptiveValue("font-size", 80, 32, 0, 1302, 353);
+		font-style: normal;
+		font-weight: 700;
+		line-height: 0.9;
+		text-transform: uppercase;
+	}
+
+	// .hero__subtitle
+	&__subtitle {
+		font-family: "Exo", sans-serif;
+		@include adaptiveValue("font-size", 18, 14, 0, 1302, 353);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.2;
+		letter-spacing: -0.36px;
+		text-transform: capitalize;
+	}
+
+	// .hero__button
+	&__button {
+		@include adaptiveValue("font-size", 20, 14, 0, 1302, 353);
+		font-style: normal;
+		font-weight: 900;
+		line-height: 1;
+		text-transform: uppercase;
+		@include adaptiveValue("padding-top", 15, 8, 0, 1302, 353);
+		@include adaptiveValue("padding-right", 60, 40, 0, 1302, 353);
+		@include adaptiveValue("padding-bottom", 15, 8, 0, 1302, 353);
+		@include adaptiveValue("padding-left", 60, 40, 0, 1302, 353);
+		background: #6F00A9;
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+		align-self: flex-start;
+		transition: all 0.3s ease;
+		&:hover{
+			background: #0B0045;
+			box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	// .hero__images
+	&__images {
+	}
+}
+
+.images-hero {
+	flex-basis: 688px;
+	flex-shrink: 1;
+	flex-grow: 1;
+	position: relative;
+	&::before {
+		content: '';
+		@include adaptiveValue("width", 110, 28, 0, 1302, 353);
+		@include adaptiveValue("height", 136, 34, 0, 1302, 353);
+
+		@include adaptiveValue("left", 48, 4, 0, 1302, 353);
+		@include adaptiveValue("top", 48, 7, 0, 1302, 353);
+
+		aspect-ratio: 110 / 136;
+		background: url('../img/hero.img/pr.svg') no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		z-index: 2;
+	}
+	
+	&::after {
+		content: '';
+		@include adaptiveValue("width", 70, 20, 0, 1302, 353);
+		@include adaptiveValue("height", 88, 28, 0, 1302, 353);
+
+		@include adaptiveValue("right", 64, 15, 0, 1302, 353);
+		@include adaptiveValue("top", 82, 32, 0, 1302, 353);
+
+		aspect-ratio: 70 / 88;
+		background: url('../img/hero.img/ae.svg') no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		z-index: 2;
+	}
+
+	// .images-hero__light-left
+	&__light-left {
+		@include adaptiveValue("width", 315, 97, 0, 1302, 353);
+		@include adaptiveValue("height", 377, 109, 0, 1302, 353);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: url('../img/hero.img/light_l.png') no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	// .images-hero__light-right
+	&__light-right {
+		@include adaptiveValue("width", 287, 97, 0, 1302, 353);
+		@include adaptiveValue("height", 322, 109, 0, 1302, 353);
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: url('../img/hero.img/light_r.png') no-repeat;
+		background-position: center;
+		background-size: contain;
+		@media(max-width: 800px){
+			display: none;
+		}
+	}
+
+	// .images-hero__photo
+	&__photo {
+		@include adaptiveValue("width", 376, 177, 0, 1302, 353);
+		@include adaptiveValue("height", 508, 260, 0, 1302, 353);
+		aspect-ratio: 376 / 508;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		z-index: 5;
+		@media(max-width: 800px){
+			margin-bottom: 20px;
+		}
+	}
+	
+	&__photo img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

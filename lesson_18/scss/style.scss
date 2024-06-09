@@ -1,0 +1,61 @@
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_mixins.scss";
+
+
+$textColor: #fff;
+$bgColor: #000000;
+
+body {
+	font-family: "Orbitron", sans-serif;
+	font-size: 16px;
+	color: $textColor;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"]{
+	max-width: 1302px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+// ========================================================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+// $maxWidthContainer: 1290;
+$maxWidthContainer: 1302;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+
+@import "_header.scss";
+@import "_menuburger.scss";
+@import "_hero.scss";
+@import "_about.scss";
+@import "_portfolio.scss";
+
+// ========================================================
+

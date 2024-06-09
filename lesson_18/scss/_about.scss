@@ -1,0 +1,99 @@
+.about {
+	background: $bgColor;
+	@include adaptiveValue("padding-top", 120, 40, 0, 1302, 353);
+	@include adaptiveValue("padding-bottom", 120, 40, 0, 1302, 353);
+
+	
+	// .about__container
+	&__container {
+		position: relative;
+		background: url('../img/about.img/bg_about.webp');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		@media(max-width: 800px){
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+
+	// .about__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	// .about__title
+	&__title {
+		font-family: "Exo", sans-serif;
+		@include adaptiveValue("font-size", 60, 24, 0, 1302, 353);
+		font-weight: 700;
+		line-height: 1.2; /* 116.667% */
+		text-transform: uppercase;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+		position: relative;
+		&::after{
+			content: '';
+			@include adaptiveValue("width", 401, 142, 0, 1302, 353);
+			height: 1px;
+			background: linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%);
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0px;
+		}
+	}
+
+	// .about__text
+	&__text {
+		text-align: center;
+		font-family: "Exo", sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 2.2; /* 222.222% */
+		letter-spacing: -0.36px;
+		text-transform: capitalize;
+		margin-bottom: 60px;
+		max-width: 992px;
+	}
+
+	// .about__line
+	&__line {
+		display: flex;
+		overflow: auto;
+		max-width: 1150px;
+		justify-content: space-between;
+		@media(max-width: 800px){
+			padding-top: 40px;
+		}
+	}
+
+	// .about__item
+	&__item {
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		padding-left: 60px;
+		flex-shrink: 0;
+		flex-grow: 0;
+		gap: 60px;
+		font-family: "Orbitron", sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.25; /* 125% */
+		text-transform: capitalize;
+
+		&::after{
+			content: '';
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			flex-shrink: 0;
+			flex-grow: 0;
+			background:  linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%);
+		}
+	}
+}
