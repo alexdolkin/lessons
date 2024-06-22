@@ -1,0 +1,122 @@
+.hot {
+	background: #fff;
+
+	// .hot__container
+	&__container {
+		position: relative;
+	}
+	
+	// .hot__title
+	&__title {
+		color: #000;
+		text-align: center;
+		font-family: "Roboto", sans-serif;
+		@include adaptiveValue("font-size", 34, 16, 0, 800, 355);
+		font-weight: 400;
+		text-transform: uppercase;
+		transform: rotate(-90deg);
+		position: absolute;
+		left: -300px;
+		bottom: 290px;
+		@media (max-width: 1365px){
+			transform: rotate(0deg);
+			position: relative;
+			left: 0px;
+			bottom: 0px;
+			padding: 10px 0;
+		}
+	}
+}
+	
+	.content {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 24px;
+		@media (max-width: 999px){
+			grid-template-columns: repeat(2, 1fr);
+			gap: 15px;
+		}
+		@media (max-width: 500px){
+			grid-template-columns: repeat(1, 1fr);
+		}
+}
+
+.card {
+	position: relative;
+	
+	&:nth-child(1){
+		grid-column: span 2;
+		grid-row: span 2;
+		@media (max-width: 500px){
+			grid-column: span 1;
+			grid-row: span 1;
+		}
+	}
+
+	// .card__img
+	&__img {
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+	}
+
+	// .card__lable
+	&__lable {
+		position: absolute;
+		left: 0;
+		padding: 4px 12px;
+		color: #fff;
+		font-family: "Open Sans", sans-serif;
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		}
+		
+		// .card__lable--red
+		&__lable--red {
+		top: 22px;
+		background-color: #FF6F61;
+		}
+		
+		// .card__lable--black
+		&__lable--black {
+			top: 52px;
+			background-color: #1E2832;
+	}
+
+	&:hover{
+		.hover{
+			opacity: 1;
+			padding: 15px 14px;
+		}
+	}
+}
+
+.hover {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #1E2832;
+	color: #fff;
+	padding: 0px 14px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: capitalize;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transition: all 0.2s ease;
+	opacity: 0;
+
+	// .hover__name
+	&__name {
+	}
+
+	// .hover__number
+	&__number {
+	}
+}
+

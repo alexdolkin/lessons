@@ -1,0 +1,78 @@
+.baner {
+	min-height: toRem(776);
+	background: url('../img/baner.img/bg_baner.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	color: #fff;
+
+	// .baner__container
+	&__container {
+		// border: 1px solid red;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+
+		&::after{
+			content: '';
+			max-width: toRem(676);
+			width: 100%;
+			height: toRem(309);
+			top: 0;
+			right: 0;
+			background: url('../img/baner.img/baner_big_logo.png') no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+		}
+	}
+
+	// .baner__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		row-gap: toRem(55);
+		max-width: 40%;
+		font-family: "Roboto",sans-serif;
+		font-weight: 400;
+		text-transform: capitalize;
+
+		@media(max-width: toRem(999)){
+			max-width: 65%;
+		}
+
+		@media(max-width: toRem(500)){
+			max-width: 100%;
+		}
+	}
+
+	// .baner__logo
+	&__logo {
+	}
+
+	// .baner__text
+	&__text {
+		// font-size: toRem(26);
+		@include adaptiveValue("font-size", 26, 20, 0, 800, 500);
+
+		line-height: 1.5;
+		@media(max-width: toRem(500)){
+			font-size: toRem(20);
+		}
+	}
+
+	// .baner__button
+	&__button {
+		color: #1e2832;
+		font-size: toRem(29);
+		background: #fff;
+		padding: 19px 26px;
+		text-transform: capitalize;
+		line-height: normal;
+		display: flex;
+		align-self: flex-start;
+		flex-shrink: 0;
+	}
+}

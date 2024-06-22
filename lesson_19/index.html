@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lesson 19</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top top-header">
+					<button class="top-header__search" type="button"></button>
+					<a class="top-header__logo" href="#"><img src="img/header.img/logo.svg" alt="logo"></a>
+					<div class="top-header__profile profile">
+						<a class="profile__item profile__item--account" href="#"><img class="profile__img" src="img/header.img/account.svg" alt="account"><span>Account</span></a>
+						<a class="profile__item profile__item--shoping" href="#"><img class="profile__img" src="img/header.img/shoping.svg" alt="shoping"><span>Shoping</span></a>
+						<button class="burger" type="button">
+							<span class="burger__line"></span>
+							<span class="burger__line"></span>
+							<span class="burger__line"></span>
+							<span class="burger__line"></span>
+						</button>	
+					</div>
+				</div>
+
+				<div class="header__bottom bottom-header">
+					<nav class="bottom-header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a class="nav__link" href="#">Jewelry & Accessories</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Clothing & Shoes</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Home & Living</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Wedding & Party</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Toys & Entertainment</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Art & Collectibles</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Craft Supplies & Tools</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="top-mine">
+				<div class="top-mine__container item-top">
+					<article class="item-top__information">
+						<h1 class="item-top__title">Collections</h1>
+						<p class="item-top__text">you can explore ans shop many differnt collection from various barands here.</p>
+						<button class="item-top__button"><span>shop now</span></button>
+					</article>
+					<div class="item-top__picture"><img src="img/top_mine.img/photo.png" alt="photo"></div>
+				</div>
+			</section>
+
+			<section class="brand">
+				<div class="brand__container">
+					<ul class="brand__list">
+						<li class="brand__item"><img class="brand__img" src="img/brand.img/brand-1.svg" alt="logo"></li>
+						<li class="brand__item"><img class="brand__img" src="img/brand.img/brand-2.svg" alt="logo"></li>
+						<li class="brand__item"><img class="brand__img" src="img/brand.img/brand-3.svg" alt="logo"></li>
+						<li class="brand__item"><img class="brand__img" src="img/brand.img/brand-4.svg" alt="logo"></li>
+						<li class="brand__item"><img class="brand__img" src="img/brand.img/brand-5.svg" alt="logo"></li>
+					</ul>	
+				</div>
+			</section>
+
+			<section class="hot">
+				<div class="hot__container">
+					<h2 class="hot__title">Explore new and popular styles</h2>
+
+					<div class="content">
+						<a class="card" href="#">
+							<img class="card__img" src="img/hot_cat.img/1hot.png" alt="photo">
+							<span class="card__lable card__lable--red">hot</span>
+							<span class="card__lable card__lable--black">sale</span>
+							<div class="hover">
+								<p class="hover__name">manto</p>
+								<p class="hover__number">86 product</p>
+							</div>
+						</a>
+						<a class="card" href="#">
+							<img class="card__img" src="img/hot_cat.img/2hot.png" alt="photo">
+							<span class="card__lable card__lable--red">hot</span>
+							<span class="card__lable card__lable--black">sale</span>
+							<div class="hover">
+								<p class="hover__name">Pants</p>
+								<p class="hover__number">200 product</p>
+							</div>
+						</a>
+						<a class="card" href="#">
+							<img class="card__img" src="img/hot_cat.img/3hot.png" alt="photo">
+							<span class="card__lable card__lable--red">hot</span>
+							<span class="card__lable card__lable--black">sale</span>
+							<div class="hover">
+								<p class="hover__name">coat</p>
+								<p class="hover__number">520 product</p>
+							</div>
+						</a>
+						<a class="card" href="#">
+							<img class="card__img" src="img/hot_cat.img/4hot.png" alt="photo">
+							<span class="card__lable card__lable--red">hot</span>
+							<span class="card__lable card__lable--black">sale</span>
+							<div class="hover">
+								<p class="hover__name">Shirt</p>
+								<p class="hover__number">320 product</p>
+							</div>
+						</a>
+						<a class="card" href="#">
+							<img class="card__img" src="img/hot_cat.img/5hot.png" alt="photo">
+							<span class="card__lable card__lable--red">hot</span>
+							<span class="card__lable card__lable--black">sale</span>
+							<div class="hover">
+								<p class="hover__name">jacket</p>
+								<p class="hover__number">103 product</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="produckts">
+				<div class="produckts__container">
+					<h2 class="produckts__title">Or subscribe to the newsletter</h2>
+					<div class="filter-produckts">
+						<div class="filter-produckts__list">
+							<button class="filter-produckts__btn" data-filter="all">all products</button>
+							<button class="filter-produckts__btn" data-filter=".category-a">t-shirt</button>
+							<button class="filter-produckts__btn" data-filter=".category-b">hoodies</button>
+							<button class="filter-produckts__btn" data-filter=".category-c">jacket</button>
+						</div>
+						<button class="filter-produckts__filter" type="button">filter</button>
+					</div>
+					<div class="produckts__content">
+						<figure class="card-produckts">
+							<span class="card-produckts__lable card-produckts__lable--red">hot</span>
+							<span class="card-produckts__lable card-produckts__lable--black">sale</span>
+
+							<img class="card-produckts__img" src="img/products.img/1_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Adicolor Classics Joggers</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">Dress</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$63.85</span>
+									<span class="price-products__price price-products__price--new"></span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-produckts">
+							<img class="card-produckts__img" src="img/products.img/2_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Nike Sportswear Futura Luxe</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">Bag</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$130.00</span>
+									<span class="price-products__price price-products__price--new"></span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-produckts">
+							<img class="card-produckts__img" src="img/products.img/3_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Geometric print Scarf</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">scarf</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$53.00</span>
+									<span class="price-products__price price-products__price--new"></span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-produckts">
+							<img class="card-produckts__img" src="img/products.img/4_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Yellow Reserved Hoodie</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">Dress</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$364.00</span>
+									<span class="price-products__price price-products__price--new">$155.00</span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-produckts">
+							<img class="card-produckts__img" src="img/products.img/5_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Basic Dress Green</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">Dress</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$236.00</span>
+									<span class="price-products__price price-products__price--new"></span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-produckts">
+							<img class="card-produckts__img" src="img/products.img/6_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Nike Air Zoom Pegasus</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">shoe</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$220.00</span>
+									<span class="price-products__price price-products__price--new">$198.00</span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-produckts">
+							<img class="card-produckts__img" src="img/products.img/7_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Nike Repel Miler</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">Dress</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$120.50</span>
+									<span class="price-products__price price-products__price--new"></span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-produckts">
+							<img class="card-produckts__img" src="img/products.img/8_product.png" alt="img_product">
+							<figcaption class="card-produckts__title">Nike Sportswear Futura Luxe</figcaption>
+							<div class="card-produckts__information">
+								<h3 class="card-produckts__subtitle">Glasses</h3>
+								<div class="price-products">
+									<span class="price-products__price price-products__price--old">$160.00</span>
+									<span class="price-products__price price-products__price--new"></span>
+								</div>
+							</div>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section class="baner">
+				<div class="baner__container">
+					<div class="baner__content">
+						<h2 class="baner__title"><img src="img/baner.img/baner_title.svg" alt="zara"></h2>
+						<p class="baner__text">
+							Lustrous yet understated. The new evening	wear collection exclusively offered at the reopened Giorgio Armani boutique in Los Angeles.
+						</p>
+						<button class="baner__button"><span>see collection</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="slider">
+				<div class="slider__container">
+					<h2 class="slider__title">Best sellers</h2>
+					<div class="filter-slider">
+						<div class="filter-slider__list">
+							<button class="filter-slider__btn" data-filter="all">all products</button>
+							<button class="filter-slider__btn" data-filter=".category-a">t-shirt</button>
+							<button class="filter-slider__btn" data-filter=".category-b">hoodies</button>
+							<button class="filter-slider__btn" data-filter=".category-c">jacket</button>
+						</div>
+						<button class="filter-slider__btn-all" type="button">show all</button>
+					</div>
+					<button class="arrow-left" type="button"></button>
+					<button class="arrow-right" type="button"></button>
+
+					<div class="slider__content">
+						
+
+						<figure class="card-slider">
+							<span class="card-slider__lable card-slider__lable--red">hot</span>
+							<span class="card-slider__lable card-slider__lable--black">sale</span>
+							<img class="card-slider__img" src="img/slider.img/1slider.png" alt="img_product">
+							<figcaption class="card-slider__title">Adicolor Classics Joggers</figcaption>
+							<div class="card-slider__information">
+								<h3 class="card-slider__subtitle">Dress</h3>
+								<div class="price-slider">
+									<span class="price-slider__price price-slider__price--old">$236.00</span>
+									<span class="price-slider__price price-slider__price--new"></span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-slider">
+							<span class="card-slider__lable card-slider__lable--red">hot</span>
+							<span class="card-slider__lable card-slider__lable--black">sale</span>
+							<img class="card-slider__img" src="img/slider.img/2slider.png" alt="img_product">
+							<figcaption class="card-slider__title">Nike Sportswear Futura Luxe</figcaption>
+							<div class="card-slider__information">
+								<h3 class="card-slider__subtitle">Bag</h3>
+								<div class="price-slider">
+									<span class="price-slider__price price-slider__price--old">$130.00</span>
+									<span class="price-slider__price price-slider__price--new"></span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-slider">
+							<span class="card-slider__lable card-slider__lable--red">hot</span>
+							<span class="card-slider__lable card-slider__lable--black">sale</span>
+							<img class="card-slider__img" src="img/slider.img/3slider.png" alt="img_product">
+							<figcaption class="card-slider__title">Yellow Reserved Hoodie</figcaption>
+							<div class="card-slider__information">
+								<h3 class="card-slider__subtitle">Dress</h3>
+								<div class="price-slider">
+									<span class="price-slider__price price-slider__price--old">$364.00</span>
+									<span class="price-slider__price price-slider__price--new">$155.00</span>
+								</div>
+							</div>
+						</figure>
+						<figure class="card-slider">
+							<span class="card-slider__lable card-slider__lable--red">hot</span>
+							<span class="card-slider__lable card-slider__lable--black">sale</span>
+							<img class="card-slider__img" src="img/slider.img/4slider.png" alt="img_product">
+							<figcaption class="card-slider__title">Nike Air Zoom Pegasus</figcaption>
+							<div class="card-slider__information">
+								<h3 class="card-slider__subtitle">shoe</h3>
+								<div class="price-slider">
+									<span class="price-slider__price price-slider__price--old">$220.00</span>
+									<span class="price-slider__price price-slider__price--new">$198.00</span>
+								</div>
+							</div>
+						</figure>
+
+					</div>
+
+
+				</div>
+			</section>
+
+			<section class="instagram">
+				<div class="instagram__container">
+					<h2 class="instagram__title">Follow products and discounts on Instagram</h2>
+					<div class="instagram__content">
+						<a class="instagram__card" href="#">
+							<img class="instagram__img" src="img/instagram.img/1insta.png" alt="image">
+						</a>
+						<a class="instagram__card" href="#">
+							<img class="instagram__img" src="img/instagram.img/2insta.png" alt="image">
+						</a>
+						<a class="instagram__card" href="#">
+							<img class="instagram__img" src="img/instagram.img/3insta.png" alt="image">
+						</a>
+						<a class="instagram__card" href="#">
+							<img class="instagram__img" src="img/instagram.img/4insta.png" alt="image">
+						</a>
+						<a class="instagram__card" href="#">
+							<img class="instagram__img" src="img/instagram.img/5insta.png" alt="image">
+						</a>
+						<a class="instagram__card" href="#">
+							<img class="instagram__img" src="img/instagram.img/6insta.png" alt="image">
+						</a>
+					</div>
+					<form class="instagram__form" action="#">
+						<h2 class="instagram__title-form">Or subscribe to the newsletter</h2>
+						<div class="input-wrapper">
+							<input class="input-instagram" type="email" name="form[]" placeholder="Email address...">
+							<button class="btn-instagram" type="submit">submit</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="top-footer">
+				<div class="top-footer__container">
+					<address class="address-footer">
+						<h3 class="address-footer__title"></h3>
+						<p class="address-footer__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+						</p>
+						<div class="address-footer__list">
+							<a class="address-footer__link" href="#"></a>
+							<a class="address-footer__link" href="#"></a>
+							<a class="address-footer__link" href="#"></a>
+							<a class="address-footer__link" href="#"></a>
+						</div>
+					</address>
+	
+					<div class="nav-footer">
+						<div class="nav-footer__item">
+							<h3 class="nav-footer__title">CATALOG</h3>
+							<div class="nav-footer__list">
+								<a class="nav-footer__link" href="#">Necklaces</a>
+								<a class="nav-footer__link" href="#">hoodies</a>
+								<a class="nav-footer__link" href="#">Jewelry Box</a>
+								<a class="nav-footer__link" href="#">t-shirt</a>
+								<a class="nav-footer__link" href="#">jacket</a>
+							</div>
+						</div>
+						<div class="nav-footer__item">
+							<h3 class="nav-footer__title">ABOUT US</h3>
+							<div class="nav-footer__list">
+								<a class="nav-footer__link" href="#">Our Producers</a>
+								<a class="nav-footer__link" href="#">Sitemap</a>
+								<a class="nav-footer__link" href="#">FAQ</a>
+								<a class="nav-footer__link" href="#">About Us</a>
+								<a class="nav-footer__link" href="#">Terms & Conditions</a>
+							</div>
+						</div>
+						<div class="nav-footer__item>
+							<h3 class="nav-footer__title">CUSTOMER SERVICES</h3>
+							<div class="nav-footer__list">
+								<a class="nav-footer__link" href="#">Contact Us</a>
+								<a class="nav-footer__link" href="#">Track Your Order</a>
+								<a class="nav-footer__link" href="#">Product Care & Repair</a>
+								<a class="nav-footer__link" href="#">Book an Appointment</a>
+								<a class="nav-footer__link" href="#">Shipping & Returns</a>
+							</div>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+
+			<div class="bottom-footer">
+				<div class="bottom-footer__container">
+					<img class="bottom-footer__2022" src="img/footer.img/2022.svg" alt="2022">
+					<a class="bottom-footer__payment" href="#" target="_blank">
+						<img src="img/footer.img/icons_payment.png" alt="payment">
+					</a>
+					<a class="scroll-top" href="#body">Scroll to top</a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/dynamic_adapt.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
+
