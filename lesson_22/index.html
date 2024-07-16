@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 22</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<h1 class="header__title">Домашня робота №22</h1>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__container">
+					<div class="task">
+						<h2 class="task__title">Задача №1</h2>
+						<div class="question">
+							<h3 class="question__title">Що потрапить в консоль?</h3>
+							<ul class="question__list">
+								<li class="question__item">
+									<span>let someVar = 0;</span><br>
+									<span>++someVar</span><br>
+									<span>if (someVar) {</span><br>
+									<span>console.log(someVar);</span><br>
+									<span>}</span>
+								</li>
+							</ul>
+						</div>
+						<div class="answer">Відповідь:<span>в консоль потрапить - 1</span></div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №2</h2>
+						<div class="question">
+							<h3 class="question__title">За допомогою циклу FOR виведіть в консоль 10 рядків:</h3>
+						</div>
+						<div class="answer">Відповідь: <br>
+							<span>let someLine = "Рядок №"</span><br>
+							<span>for (let i = 1; i < 11; ++i) {</span><br>
+							<span>console.log('Рядок №' + [i])</span><br>
+							<span>}</span>
+						</div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №3</h2>
+						<div class="question">
+							<h3 class="question__title">Що потрапить в консоль?</h3>
+							<ul class="question__list">
+								<li class="question__item">
+									<span>if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {</span><br>
+									<span>console.log('000');</span><br>
+									<span>}</span>
+								</li>
+							</ul>
+						</div>
+						<div class="answer">Відповідь:<span>В консоль нічого не потрапить, так як жодна з умов не виконується </span></div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №4</h2>
+						<div class="question">
+							<h3 class="question__title"></h3>
+							<ul class="question__list">
+								<li class="question__item">
+									Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "
+								</li>
+								<li class="question__item">
+									Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім. Функція не має повертати NaN, Infinite або помилку 
+								</li>
+							</ul>
+						</div>
+						<div class="answer">Відповідь: <br>
+							<span>function divide(a, b) {</span><br>
+							<span>// Перевірка на передані значення і ділення на нуль</span><br>
+							<span>if (typeof a !== 'number', typeof b !== 'number', isNaN(a), isNaN(b), b === 0) {</span><br>
+							<span>return "Результат ділення: некоректні дані";</span><br>
+							<span>}</span><br>
+							<br>
+							<span>// Виконання ділення</span><br>
+							<span>let result = a / b;</span><br>
+							<br>
+							<span>// Повернення рядка з результатом</span><br>
+							<span>return "Результат ділення: " + result;</span><br>
+							<br>
+							<span>// Приклади виклику вункції з різними значеннями</span><br>
+							<span>console.log(divide(10, 2)); - Результат ділення: 5</span><br>
+							<span>console.log(divide(10, 0)); - Результат ділення: некоректні дані</span><br>
+							<span>console.log(divide(10)); - Результат ділення: NaN</span><br>
+							<span>console.log(divide()); - Результат ділення: NaN</span><br>
+							<span>console.log(divide(15, 3)); - Результат ділення: 5</span><br>
+							<span>console.log(divide("a", 3)); - Результат ділення: NaN</span><br>
+						</div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №5</h2>
+						<div class="question">
+							<h3 class="question__title"></h3>
+							<ul class="question__list">
+								<li class="question__item">
+									Створіть масив даних - 5 елементів, один з яких число 10
+								</li>
+								<li class="question__item">
+									Обробіть масив за допомогою методу перебору
+								</li>
+								<li class="question__item">
+									Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль
+								</li>
+							</ul>
+						</div>
+						<div class="answer">Відповідь: <br>
+							<span>let someArray = [12, "item", 10, "87", true]</span><br>
+							<span>console.log(someArray);</span><br>
+							<span>someArray.forEach((item) => {</span><br>
+							<span>if (item === 10) {</span><br>
+							<span>console.log(item);</span><br>
+							<span>}</span><br>
+							<span>})</span><br>
+						</div>
+					</div>
+
+
+
+				</div>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+		<!-- Підключення JS-файлу з кодом -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
