@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 23</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<h1 class="header__title">Домашня робота №23</h1>
+				</div>
+			</header>
+			<main class="page">
+
+				<div class="page__container">
+
+					<div class="task">
+						<h2 class="task__title">Задача №1</h2>
+						<div class="question">
+							<div class="question__title">
+								Отримати в константу елемент "body"
+							</div><br>
+						</div>
+						<div class="answer">Відповідь:<br>
+							<span>const bodyElement = document.body;</span><br>
+							<span>console.log(bodyElement);</span><br>
+						</div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №2</h2>
+						<div class="question">
+							<div class="question__title">
+								Написати функцію, яка додає в "body" список UL з певною кількістю LI (кількість має передаватись як параметр функції, також мати значення за замовченням)
+							</div><br>
+						</div>
+						<div class="answer">Відповідь:<br>
+							<span>function addList(item = 5) {</span><br>
+							<span>const ul = document.createElement('ul');</span><br>
+							<span>for (let i = 0; i < item; ++i) {</span><br>
+							<span>const li = document.createElement('li');</span><br>
+							<span>li.textContent = `Пункт № ${i + 1}`;</span><br>
+							<span>ul.append(li);</span><br>
+							<span>}</span><br>
+							<span>document.body.append(ul);</span><br>
+							<span>}</span><br>
+							<span>addList();</span><br>
+							<span>addList(1);</span><br>
+						</div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №3</h2>
+						<div class="question">
+							<div class="question__title">
+								Додати до елементу "body" класс loaded. Потім перевірити чи є клас loaded у елемента "body" і, якщо є, додати стиль кольору тесту зелений.
+							</div><br>
+						</div>
+						<div class="answer">Відповідь:<br>
+							<span>const body = document.querySelector('body')</span><br>
+							<span>body.classList.toggle('loaded')</span><br>
+							<span>if (body.classList.contains('loaded')){</span><br>
+							<span>console.log('Клас loaded');</span><br>
+							<span>body.style.color = `green`;</span><br>
+							<span>}</span><br>
+						</div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №4</h2>
+						<div class="question">
+							<div class="question__title">
+								Дано в html: три елементи з класом item. Треба отримати ці елементи в константу, кожному додати клас active, та перезаписати контент всередені кожного елемента на "Елемент №(тут порядковий номер елементу починаючи з 1)".
+							</div><br>
+						</div>
+						<div class="answer">Відповідь:<br>
+							<span>const item = document.querySelectorAll('.item');</span><br>
+							<span>if (item.length) {</span><br>
+							<span>item.forEach((item, index) => {</span><br>
+							<span>item.classList.add('active');</span><br>
+							<span>item.textContent = `Елемент №${index + 1}`</span><br>
+							<span>});</span><br>
+							<span>}</span><br>
+						</div> <br>
+
+						<div class="item"></div>
+						<div class="item"></div>
+						<div class="item"></div>
+			
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №5</h2>
+						<div class="question">
+							<div class="question__title">
+								Дано в html: текст, далі кнопка з класом button. Треба прокрутити скрол сторінки до кнопки
+							</div><br>
+						</div>
+						<div class="answer">Відповідь:<br>
+							<span>const button = document.querySelector('.button');</span><br>
+							<span>function scrollToBlock(button) {</span><br>
+							<span>button.scrollIntoView({</span><br>
+							<span>button: "center",</span><br>
+							<span>inline: "nearest",</span><br>
+							<span>behavior: "smooth"</span><br>
+							<span>});</span><br>
+							<span>}</span><br>
+							<span>scrollToBlock(button);</span><br>
+						</div>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №6</h2>
+						<div class="question">
+							<div class="question__title">
+								Дано в html: посилання з класом link Треба додати до посилання дата атрибут зі значенням 100 Потім отримати значення атрибуту, та, якщо значення меньше 200 пофарбувати колір тексту посилання в червоний
+							</div><br>
+						</div>
+						<div class="answer">Відповідь:<br>
+							<span>const link = document.querySelector('.link');</span><br>
+							<span>link.setAttribute('data', '100');</span><br>
+							<span>const data = parseInt(link.getAttribute('data'));</span><br>
+							<span>if (data < 200) {</span><br>
+							<span>link.style.color = 'red';</span><br>
+							<span>}</span><br>
+						</div> <br>
+
+						<a class="link" href="#">посилання</a>
+
+					</div>
+
+
+					<div class="text">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque itaque iste iusto earum dolor ducimus ullam aperiam est recusandae commodi autem vero similique, aut inventore voluptatum, ipsam rem expedita odio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque itaque iste iusto earum dolor ducimus ullam aperiam est recusandae commodi autem vero similique, aut inventore voluptatum, ipsam rem expedita odio?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque itaque iste iusto earum dolor ducimus ullam aperiam est recusandae commodi autem vero similique, aut inventore voluptatum, ipsam rem expedita odio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, maxime architecto fuga mollitia quos reprehenderit suscipit nulla voluptatum soluta iusto vero perspiciatis optio veniam voluptatibus corporis ipsum, eum tempora! Architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis inventore perferendis quod voluptatibus ab a! Deleniti iure quis ipsum esse suscipit optio non, possimus impedit rerum minima, ut, vel maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quis, reiciendis, dolores excepturi dolorum asperiores praesentium recusandae ducimus temporibus totam mollitia maxime, perspiciatis deleniti error quibusdam obcaecati nemo explicabo eos?
+					</div>
+
+					<button class="button" type="button">button</button>
+
+					
+				</div>
+				
+			</main>
+
+
+			<footer class="footer"></footer>
+		</div>
+		<!-- Підключення JS-файлу з кодом -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
