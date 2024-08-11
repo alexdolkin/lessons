@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 24</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header" id="header">
+				<div class="header__container">
+					<h1 class="header__title">Домашня робота №24</h1>
+				</div>
+			</header>
+
+			<main class="page">
+
+				<div class="page__container">
+
+					<div class="task">
+						<h2 class="task__title">Задача №1</h2>
+						<div class="question">
+							Дано в html: три елементи з класом item. При кліку на кожен з елментів додати клас active, при повторному кліку прибрати клас 
+						</div><br>
+						<div class="answer">Відповідь:</div><br>
+						<div class="element">Element 1</div>
+						<div class="element">Element 2</div>
+						<div class="element">Element 3</div>
+						<span>document.querySelectorAll('.item').forEach(item => {</span><br>
+						<span>item.addEventListener('click', () => {</span><br>
+						<span>item.classList.toggle('active');</span><br>
+						<span>});</span><br>
+						<span>});</span><br>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №2</h2>
+						<div class="question">
+							Дано в css/scss: body прозорий При повному завантаженню сторінки додати клас до body який прибирає прозорість.
+						</div><br>
+						<div class="answer">Відповідь:</div><br>
+						<span>window.addEventListener('load', function() {</span><br>
+						<span>document.body.classList.add('loaded');</span><br>
+						<span>});</span><br>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №3</h2>
+						<div class="question">
+							Дано в html: header main footer Пи наведенні курсору на header змінювати колір фону у footer. Коли курсор йде з header повертати початковий фон для footer. 
+						</div><br>
+						<div class="answer">Відповідь:</div><br>
+						<span>const header = document.querySelector('header')</span><br>
+						<span>const footer = document.querySelector('footer')</span><br>
+						<span>header.addEventListener('mouseover', () => {</span><br>
+						<span>footer.style.backgroundColor = '#9acd32'</span><br>
+						<span>footer.style.color = '#000'</span><br>
+						<span>})</span><br>
+						<span>header.addEventListener('mouseleave', () => {</span><br>
+						<span>footer.style.backgroundColor = '#000'</span><br>
+						<span>footer.style.color = '#fff'</span><br>
+						<span>})</span><br>
+					</div>
+
+					<div class="task">
+						<h2 class="task__title">Задача №4</h2>
+						<div class="question">
+							Дано в html: текст, елемент з класом item, текст. Так, що елемент з класом item за межами в'юпотрта. Створити функцію яка будує нтервал кий буде змінювати контент в елементі item виводячи цифру яка збільшується на одиницю: 1 2 3 ... і т.д. Затримка між зміною числа, та до якого числа має працювати інтервал має задаватись в дата атрибутах елемента item. Функція має запустатить коли ми доскролюємо до елементу item (його видно), і не запускатись повторно.
+						</div><br>
+						<div class="answer">Відповідь:</div><br>
+						<div class="text">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit culpa, explicabo iusto a esse deserunt totam earum sequi fugiat? Quibusdam eum id natus, suscipit at dignissimos laborum iusto fuga molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi adipisci aut facilis sapiente ut. Dolorum at ex eos totam, quos doloremque autem sapiente molestias consequatur, cum nam beatae tempora excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eius veritatis aperiam a quae dolorum culpa. Vero, iste et facere illum neque blanditiis alias, consectetur dolorum, tenetur enim magni perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet blanditiis aut rem hic cum perspiciatis enim animi illum ut, saepe a aspernatur ipsa aliquam est expedita similique dicta ipsum et? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur odio earum vel reprehenderit at voluptas ea quis! Laboriosam inventore doloremque omnis ipsa quidem dicta. Rem voluptatibus aspernatur veniam error. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nemo voluptates similique error molestias vero ipsum veniam sapiente tenetur. Nam odit quaerat quae repellat porro aut! Enim molestiae laudantium consectetur.
+						</div>
+						<div class="item item--anim" id="timer"></div>
+						<div class="text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, voluptate. Repudiandae cupiditate, dolorum laborum, necessitatibus, pariatur praesentium magnam unde quibusdam nesciunt porro ratione! Cupiditate amet exercitationem in animi beatae optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, est nobis fuga delectus fugit iure beatae quas sapiente rerum dicta recusandae possimus ex, consequuntur, quasi explicabo. Earum dolorem unde ex! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt facere harum laudantium dolorem voluptas accusamus nihil unde officiis in vero beatae ea delectus recusandae molestias veniam, repudiandae deleniti similique itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate, iusto corrupti molestias perspiciatis totam esse omnis labore in a. Sequi non deserunt, quo ipsa modi amet deleniti temporibus fuga. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente harum minima voluptate animi reprehenderit. Saepe voluptate laborum maiores omnis, iusto obcaecati laudantium atque accusamus ab, commodi, dolorum quod ipsa? Sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, voluptatum? Accusantium in enim unde pariatur voluptate quidem incidunt vero esse doloremque magnam ullam, nesciunt eius sunt laboriosam, aliquid, perspiciatis cupiditate.
+						</div>
+						<div class="img"><img src="img/24_4_img.jpg" alt="#4"></div><br>
+					</div>
+
+				</div>
+
+			</main>
+
+
+			<footer class="footer" id="footer">footer</footer>
+		</div>
+		<!-- Підключення JS-файлу з кодом -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
